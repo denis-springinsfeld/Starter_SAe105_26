@@ -1,0 +1,7 @@
+/* Ceci est une réinitialisation des styles de base à vous de le compléter */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
