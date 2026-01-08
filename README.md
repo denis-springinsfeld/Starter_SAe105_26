@@ -38,7 +38,6 @@ Exemple d'ajout d'un composant **Navigation** :
 ## POINTS de VIGILANCE
 
 1. Structure projet - lisibilité du code - convention de nommage
-
 2. Code valide W3C
 3. Balises sémantiques
 4. utilisation et appropriation du reset
