@@ -46,7 +46,7 @@ Exemple d'ajout d'un composant **Navigation** :
 6. Sélecteurs CSS - méthodologie BEM
 7. Ordre des propriétés CSS
 8. Choix des unités
-9. Media queries - design responsive 11. Utilisation des propriétés personnalisées pour customiser vos composants 12. Composants complexes ou composants imbriqués 13. Bon usage des propriétés CSS : positionnement, flexbox...
+9. Media queries - design responsive
 10. Utilisation des propriétés personnalisées pour customiser vos composants
 11. Composants complexes ou composants imbriqués
 12. Bon usage des propriétés CSS : positionnement, flexbox...
