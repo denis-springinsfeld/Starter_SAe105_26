@@ -7,23 +7,71 @@
     <link rel="stylesheet" href="./css/global.css" />
   </head>
   <body>
-    <!-- HTML du composant Hero sans variable personnelle-->
-    <section class="hero">
+    <!-- Navigation Simple-->
+    <nav class="navigation">
+      <a href="#" class="navigation__logo">StartUp</a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Hero</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Features</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Pricing</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navigation avec propriété personnalisée -->
+    <nav
+      class="navigation"
+      style="--fg-nav: var(--accent); --bg-nav: var(--fg)"
+    >
+      <a href="#" class="navigation__logo">StartUp</a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Hero</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Features</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Pricing</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
       <h1 class="hero__title">Mon composant Hero</h1>
       <p class="hero__desc">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
         voluptatem facere quia cum rerum cumque perspiciatis dolorum unde,
         libero itaque.
       </p>
-    </section>
-    <!-- HTML du composant Hero avec variable personnelle permettant de personnaliser l'arrière-plan -->
-    <section class="hero" style="--bg-hero: url('../../assets/hero-bg.jpg')">
+    </header>
+    <!-- Composants Imbriqués : Hero + Navigation -->
+    <header class="hero" style="--bg-hero: url('../../assets/hero-bg.jpg')">
+      <nav class="hero__nav navigation">
+        <a href="#" class="navigation__logo">StartUp</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Hero</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Features</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Pricing</a>
+          </li>
+        </ul>
+      </nav>
       <h1 class="hero__title">Mon composant Hero</h1>
       <p class="hero__desc">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
         voluptatem facere quia cum rerum cumque perspiciatis dolorum unde,
         libero itaque.
       </p>
-    </section>
+    </header>
   </body>
 </html>

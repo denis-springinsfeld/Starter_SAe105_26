@@ -17,10 +17,18 @@
     - Le underscore _ signale aux développeurs que c'est une variable interne
     */
   --_bg-hero: var(--bg-hero, url("https://placehold.co/600x400"));
+  --_fg-hero: var(--fg-hero, #fff);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
   margin: 2rem auto;
   padding: 10rem 0;
   font-family: var(--ff-sans);
-  color: var(--clr-light);
+  color: var(--_fg-hero);
   text-align: center;
   background-color: var(--clr-dark);
   background-image: linear-gradient(
@@ -34,9 +42,23 @@
   background-repeat: no-repeat;
 }
 
+/* Cible .hero qui contient un <nav> */
+/* Spécificité = (0,1,1) - classe + élément */
+.hero:has(nav) {
+  padding-top: 0;
+}
+
+/* Cible .hero__nav qui est aussi un élément <nav> */
+/* Spécificité = (0,1,1) - classe + élément */
+.hero__nav:is(nav) {
+  align-self: stretch;
+  margin-bottom: 5rem;
+  background-color: transparent;
+}
+
 .hero__title {
-  max-width: 12ch;
-  margin: 0 auto;
+  max-width: 20ch;
+  margin: 1rem auto;
   font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 2.6px;
@@ -44,7 +66,7 @@
 
 .hero__desc {
   max-width: 35ch;
-  margin: 2rem auto;
+  margin: 1rem auto;
   font-size: 1.375rem;
   font-weight: 500;
   line-height: 1.5;

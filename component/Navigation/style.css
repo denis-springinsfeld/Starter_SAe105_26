@@ -1,0 +1,45 @@
+.navigation {
+  --_fg-nav: var(--fg-nav, white);
+  --_bg-nav: var(--bg-nav, gray);
+  --_radius-nav: var(--rounded, 0);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 1rem 0;
+
+  gap: 1rem;
+  padding: 1rem;
+  font-family: var(--ff-sans);
+  color: var(--_fg-nav);
+  background-color: var(--_bg-nav);
+  @media (width > 50rem) {
+    flex-direction: row;
+  }
+}
+
+.navigation__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  list-style: none;
+}
+
+.navigation__link {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: var(--fg);
+  background-color: var(--bg);
+  border-radius: var(--_radius-nav);
+}
