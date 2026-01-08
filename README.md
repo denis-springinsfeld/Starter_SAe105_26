@@ -34,3 +34,18 @@ Exemple d'ajout d'un composant **Navigation** :
 > La procédure est valable pour n'importe quel composant !
 
 > Remarque : Utilisation de variables CSS personnalisées pour spécifier l'URL d'une image et l'appliquer à la propriété background-image (CSS).
+
+## POINTS de VIGILANCE
+
+1 - Structure projet - lisibilité du code - convention de nommage
+2 - Code valide W3C
+3 - Balises sémantiques
+4 - utilisation et appropriation du reset
+5 - Utilisation de variables CSS personnalisées
+6 - Sélecteurs CSS - méthodologie BEM
+7 - Ordre des propriétés CSS
+9 - Choix des unités
+10 - Media queries - design responsive
+11 - Utilisation des propriétés personnalisées pour customiser vos composants
+12 - Composants complexes ou composants imbriqués
+13 - Bon usage des propriétés CSS : positionnement, flexbox...

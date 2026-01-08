@@ -17,7 +17,7 @@
     - Le underscore _ signale aux développeurs que c'est une variable interne
     */
   --_bg-hero: var(--bg-hero, url("https://placehold.co/600x400"));
-  --_fg-hero: var(--fg-hero, #fff);
+  --_fg-hero: var(--fg-hero, var(--clr-light));
 
   display: flex;
   flex-direction: column;
